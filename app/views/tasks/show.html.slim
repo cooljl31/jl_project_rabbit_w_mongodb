@@ -1,8 +1,11 @@
-h1= @task.title
-p= @task.description
-p= @task.company
-
-.btn-group
-  = link_to 'Back', root_path, class: 'btn btn-default'
-  = link_to 'Edit', edit_task_path(@task), class: 'btn btn-info'
-  = link_to 'Trash', task_path(@task), method: :delete, data: { confirm: 'Really?' }, class: 'btn btn-danger'
+#jobs
+  .job
+    h1= @task.title
+    p= @task.description
+    p= @task.company
+    button.btn.btn-default= link_to 'Complete Taks', @task.url
+#links
+  .btn-group
+    = link_to 'Back', root_path, class: 'btn btn-default'
+    = link_to 'Edit', edit_task_path(@task), class: 'btn btn-info'
+    = link_to 'Trash', task_path(@task), method: :delete, data: { confirm: 'Really?' }, class: 'btn btn-danger'

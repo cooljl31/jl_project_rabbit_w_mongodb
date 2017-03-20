@@ -1,8 +1,10 @@
 = simple_form_for(@task, html: { class: 'form-horizontal' }, wrapper: :horizontal_form) do |f|
-  = f.collection_select :category_id, Category.all, :id, :name, { prompt: 'choose a Categogy'}
-  = f.input :title, label: 'task title'
-  = f.input :description, label: 'task description', as: :text
-  = f.input :company, label: 'your company'
-  = f.input :url, label: 'Link to task'
+  = f.collection_select :category_id, Category.all, :id, :name, { prompt: 'choose a Categogy'}, class: 'dropdown-toggel pull-right'
   br
-  = f.button :submit
+  br
+  = f.input :title, label: 'task title', class: 'form-control'
+  = f.input :description, label: 'task description', as: :text, class: 'form-control'
+  = f.input :company, label: 'your company', class: 'form-control'
+  = f.input :url, label: 'Link to task', class: 'form-control'
+  br
+  = f.button :submit, class: 'pull-right'
