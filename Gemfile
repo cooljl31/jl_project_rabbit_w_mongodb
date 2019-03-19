@@ -59,7 +59,7 @@ gem 'bson_ext'
 gem 'slim-rails'
 gem 'simple_form'
 gem 'bootstrap-sass'
-gem 'devise'
+gem 'devise', '>= 4.6.0'
 gem 'devise-bootstrap-views'
 gem 'mongoid-paperclip'
 group :test do
