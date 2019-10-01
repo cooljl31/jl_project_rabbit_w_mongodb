@@ -57,7 +57,7 @@ gem 'rails_12factor', group: :production
 gem 'mongoid'
 gem 'bson_ext'
 gem 'slim-rails'
-gem 'simple_form'
+gem 'simple_form', '>= 5.0.0'
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'devise-bootstrap-views'
