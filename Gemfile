@@ -66,7 +66,7 @@ group :test do
   gem 'database_cleaner'
   gem 'factory_girl_rails'
   gem 'mongoid-rspec'
-  gem 'cucumber-rails', require: false
-  gem 'capybara'
+  gem 'cucumber-rails', '>= 1.4.5', require: false
+  gem 'capybara', '>= 2.13.0'
   gem 'database_cleaner'
 end
